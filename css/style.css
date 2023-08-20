@@ -1,0 +1,198 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nerko+One&display=swap");
+
+
+
+/* 
+font-family: 'Comfortaa', cursive;
+font-family: 'Nerko One', cursive;
+*/
+
+
+/* start Gams */
+body{
+    background-color: #272b30;
+    /* font-family: 'Nerko One', cursive !important; */
+    font-family: 'Comfortaa', cursive !important;
+}
+header img{
+    max-height: 30vh;
+}
+
+.games nav{
+    background-color: #3a497b;
+    position: sticky!important;
+    top: 0;
+    z-index: 1;
+   
+}
+.games nav .logo{
+    font-size: 25px;    
+    font-family: 'Nerko One', cursive !important;
+    padding: 5px 0px;
+}
+.games nav .logo img{
+    width: 40px;
+    vertical-align: middle;
+
+}
+.games nav a{
+    color: #fff;
+}
+.games nav ul li a{
+    transition: all .5s;
+    font-size: 12px;
+}
+.games nav ul li .active{
+    color: #0099cc !important;
+}
+.games nav ul li a:hover{
+    color: #0099cc !important;
+}
+
+.games .container .row .card{
+    border: 1px solid rgba(0,0 , 0, 0.175);
+    background-color: #272b30;
+    width: 90%;
+    
+}
+.card{
+    padding: 12px !important;
+    cursor: pointer;
+
+}
+.games .card p{
+    font-size: 12px; 
+    text-align: center;
+}
+.games .card .btnFree{
+    font-size: 12px; 
+    background-color: #394a61;
+    padding: 8px;
+    border-radius: 5px;
+    transition: all 1s;
+
+}
+hr{
+    color: rgba(0,0 , 0, 0.5);
+}
+.games .col-md-3{
+    transition: all 1s;
+}
+.games .card h6{
+    font-size: 14px; 
+ 
+}
+.games .card p{
+    
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
+}
+.games .card img{
+    filter:grayscale(0.8);
+    transition: all 1s;
+}
+.games .col-md-3:hover img {
+    filter: none;
+}
+.games .col-md-3:hover .btnFree {
+    background-color: #0099cc;
+}
+.games .col-md-3:hover{
+    transform: scale(1.05);
+}
+.card-footer span{
+    background-color: #32383e;
+    padding: 2px 5px;
+    font-size: 12px;
+    border-radius: 5px;
+    color: #fff;
+    transform: translatey(5px);
+    font-family: 'Nerko One', cursive;
+}
+/* end Gams */
+/* start details */
+.details{
+    background-color: #272729be;
+    min-height: 100vh;
+    font-family: 'Nerko One', cursive;
+
+}
+/* end details */
+/* start loding */
+/* .loding{
+    background-color: #272b30d6;
+    top: 0;
+    width: 100%;
+    min-height: 100%;
+}
+.spinar{
+    width:100px ;
+    height: 100px;
+    /* background-color: #0099cc; */
+    /* border-left: 4px solid #fff;
+    overflow: hidden;
+    border-bottom: none;
+    border-top: none;
+    border-right: none;
+    position: relative;
+} */
+/*.chiled-spinar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:90px ;
+    height: 90px;
+    /* background-color: #272b30; */
+    /* border-right: 4px solid red;
+    border-bottom: none;
+    border-top: none;
+    border-left: none; */
+    /* animation: spiner 1s infinite; */
+/* }  */
+/* end loding */
+/***** Loader *****/
+.loading {
+    position: fixed;
+    z-index: 9999;
+    inset: 0;
+    background-color: #272b30e3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .loader {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: inline-block;
+    border-top: 4px solid #fff;
+    border-right: 4px solid transparent;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    position: relative;
+ }
+ .loader::after {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border-left: 4px solid #ff3d00;
+    border-bottom: 4px solid transparent;
+    animation: rotation 0.5s linear infinite reverse;
+ }
+ @keyframes rotation {
+    0% {
+       transform: rotate(0deg);
+    }
+    100% {
+       transform: rotate(360deg);
+    }
+ }
+ /***** End Loader *****/
